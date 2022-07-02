@@ -1,0 +1,130 @@
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+
+* {
+    font-family: 'Elice Digital Baeum',sans-serif;
+    
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    display: flex;
+    background-color: gray;
+    list-style-type: none;
+    height: 60px;
+    padding: 0 0 0 70px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    line-height: 60px;
+  }
+
+  nav ul li a:hover {
+    color: rgb(69, 65, 65);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+    transition: all 0.2s ease-in;
+  }
+
+  main{
+    padding: 80px 100px;
+  }
+
+  #cv {
+    display: none;
+    font-size: 60px;
+  }
+
+  #name {
+    display: inline-block;
+    font-size: 100px;
+    letter-spacing: 50px;
+  }
+ 
+.profile {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  transform: rotate(0deg);
+  transition: transform 1s;
+}
+
+.profile img:hover {
+    width: 255px;
+    height: 255px;
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+
+.sub {
+  display:grid;
+  grid-template-columns: 0.6fr 1fr;
+}
+
+.sub-title {
+  font-size: 28px;
+  margin: 30px 0 8px 0;
+}
+
+#학력사항 ul li {
+    margin: 0px 20px;
+}
+
+#경력사항 ol li {
+    margin: 0px 20px;
+}
+
+#보유스킬 ul li {
+    margin: 0px 20px;
+    list-style-type: square;
+}
+
+footer {
+    background-color: gray;
+    padding: 20px 0 20px 100px;
+}
+footer div {
+  display:inline-grid;
+  grid-template-columns: 0.4fr 1fr ;
+  font-size: 15px;
+  color:white;
+  font-weight: lighter;
+}
+
+@media (max-width:768px) {
+  main {
+    padding: 20px 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    padding: 0 0 0 50px;
+  }
+  .profile{
+    display: block;
+  }
+  #name {
+    font-size: 100px;
+    letter-spacing: 0px;
+  }
+  .sub {
+    display: block;
+  }
+  footer {
+    background-color: gray;
+    padding: 20px 0 20px 80px;
+}
+  footer div{
+    display: block;
+  }
+}
